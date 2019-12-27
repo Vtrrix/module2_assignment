@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #efefbb, #d4d3dd); 
+}
+header{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 180%;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+section{
+    margin: 30px 10px;
+    width: 30%;
+    min-width: 310px;
+    color: aliceblue;
+    background: rgb(163, 163, 163);
+    border: 3px solid black;
+}
+section > h3{
+    font-size: 130%;
+    padding: 10px;
+    float: right;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    width: 35%;
+    text-align: center;
+    height: fit-content;
+    font-family: 'Ubuntu', sans-serif;
+}
+section > div{
+    clear: right;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.title1{
+    background-color: rgb(140, 118, 235);
+}
+.title2{
+    background-color: rgb(235, 141, 118);
+}
+.title3{
+    background-color: rgb(118, 235, 147);
+    color: black;
+}
+@media only screen and (max-width:991px) and (min-width:767px){
+    .one , .two{
+        width: 47%;
+    }
+    .three{
+        width:96%;
+    }
+
+}
+@media only screen and (max-width:767px){
+    .one , .two , .three{
+        width: 96%;
+    }
+    
+
+}
